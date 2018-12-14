@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>贪食蛇游戏</title>
+</head>
+<style>
+    .map {
+        width: 800px;
+        height: 600px;
+        background-color: #CCC;
+        position: relative;
+    }
+</style>
+<body>
+
+<div class="map"></div>
+<script src="Food.js"></script>
+<script src="Snake.js"></script>
+<script src="Game.js"></script>
+<script>
+
+    var game = new Game(document.querySelector(".map"));
+    game.init();
+
+</script>
+
+</body>
+</html>
