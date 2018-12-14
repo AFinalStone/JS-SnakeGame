@@ -2,28 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>贪食蛇游戏</title>
+    <title>title</title>
+    <style>
+        .map {
+            width: 800px;
+            height: 600px;
+            background-color: #CCC;
+            position: relative;
+        }
+    </style>
 </head>
-<style>
-    .map {
-        width: 800px;
-        height: 600px;
-        background-color: #CCC;
-        position: relative;
-    }
-</style>
 <body>
-
+<!--画出地图,设置样式-->
 <div class="map"></div>
 <script src="Food.js"></script>
 <script src="Snake.js"></script>
 <script src="Game.js"></script>
 <script>
 
-    var game = new Game(document.querySelector(".map"));
-    game.init();
+    //初始化游戏对象
+    var gm = new Game(document.querySelector(".map"));
+
+    //初始化游戏---开始游戏
+    gm.init();
+
 
 </script>
-
 </body>
 </html>

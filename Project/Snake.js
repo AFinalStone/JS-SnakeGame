@@ -2,7 +2,6 @@
  * Created by AF
  * 小蛇对象
  */
-
 (function () {
     var elements = [];//存放小蛇的每个身体部分
     //小蛇的构造函数
@@ -21,7 +20,7 @@
     }
 
     //为原型添加方法--小蛇初始化的方法
-    Snake.prototype.init = function (map) {
+    Snake.prototype.init = function (myMap) {
         //先删除之前的小蛇
         remove();//===========================================
 
@@ -32,7 +31,7 @@
             //创建div
             var div = document.createElement("div");
             //把div加入到map地图中
-            map.appendChild(div);
+            myMap.appendChild(div);
             //设置div的样式
             div.style.position = "absolute";
             div.style.width = this.width + "px";
@@ -106,3 +105,4 @@
     //把Snake暴露给window,外部可以访问
     window.Snake = Snake;
 }());
+
